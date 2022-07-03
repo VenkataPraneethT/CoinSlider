@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+
+
+
+
+.indiactors-container {
+  width:381px
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 640px) {
+  .rotatedCoinTop {
+    top: 30vw;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rotatedCoinTop {
+  top: 80vw;
 }
 
-.App-link {
-  color: #61dafb;
+.coin-invisible {
+  z-index: -1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-visible {
+  z-index: 1;
+}
+
+.coin-inner-container {
+  transform: translate(0px, 0px); 
+  left: 0px; 
+  
+  margin: 0px; 
+  max-width: 100vw; 
+  width: 100vw; 
+  /* max-height: 237px; 
+  height: 237px;  */
+  padding: 0px; 
+  box-sizing: border-box; 
+}
+
+.position-fixed {
+  position: fixed;
+  bottom: 0; 
+}
+
+.position-absolute {
+  position: absolute;
+  top: 42vh;
+}
+
+.coin-inner-container-rotate-1 {
+  background-position-y: 0%;
+}
+
+.coin-inner-container-rotate-2 {
+   z-index: 0;
+   
+}
+
+.coin-inner-container-rotate-8 {
+  background-position-y: 1900%;
+}
+
+.coin-inner-container-rotate-7 {
+  background-position-y: 1600%;
+}
+
+.coin-inner-container-rotate-6 {
+  background-position-y: 1200%;
+}
+
+.coin-inner-container-rotate-5 {
+  background-position-y: 900%;
+}
+
+.coin-inner-container-rotate-4 {
+  background-position-y: 600%;
+}
+
+.coin-inner-container-rotate-3 {
+  background-position-y: 300%;
+}
+
+.coin-inner-container-rotate-9 {
+   background-position-y: 2200%;
+  
+}
+
+.coin-innermost-container{
+  background-size: 100%; 
+  background-image: url("./images/coin-sequence.png"); 
+  margin-right: -6.61376vw; 
+}
+
+
+.text-blue {
+  --tw-text-opacity: 1;
+    color: rgb(53 85 247/var(--tw-text-opacity));
 }
